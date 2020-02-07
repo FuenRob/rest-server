@@ -18,7 +18,7 @@ let urlServerBBDD;
 if(process.env.NODE_ENV === 'dev'){
     urlServerBBDD = 'mongodb://localhost:27017/intranet';
 }else{
-    urlServerBBDD = 'mongodb+srv://<user>:<password>@cluster0-nixve.mongodb.net/intranet';
+    urlServerBBDD = 'mongodb+srv://FuenRobBD:l9LpCblsQ4ffBQBn@cluster0-nixve.mongodb.net/intranet';
 }
 
 process.env.urlServerBBDD = urlServerBBDD;
