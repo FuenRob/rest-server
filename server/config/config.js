@@ -26,8 +26,12 @@ process.env.SERVER_BBDD = urlServerBBDD;
 
 process.env.TOKEN_TIME = 60*60*24*30;
 
-
 /**
  * SEED auth
  */
 process.env.SEED_AUTH = process.env.SEED_AUTH || 'este-es-el-seed-desarrollo'
+
+/**
+ * Google Client ID
+ */
+process.env.CLIENT_ID = process.env.CLIENT_ID || 'CLIENT_ID_GOOGLE_API'

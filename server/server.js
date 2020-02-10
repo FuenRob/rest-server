@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 // Routes Global File
 app.use(require('./routes/index'));
 
+// Enable public folder
+const path = require('path');
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 // Connect with BBDD
 const run = async () => {
