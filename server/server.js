@@ -10,12 +10,13 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
-app.use(require('./routes/users'));
+// Routes Global File
+app.use(require('./routes/index'));
 
 
 // Connect with BBDD
 const run = async () => {
-    await mongoose.connect(process.env.urlServerBBDD, {
+    await mongoose.connect(process.env.SERVER_BBDD, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
