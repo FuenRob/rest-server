@@ -28,7 +28,7 @@ app.get('/usuario', verifyToken, (req, res) => {
             });
         }
     
-        User.count(conditions,(err, sumUsers) => {
+        User.countDocuments(conditions,(err, sumUsers) => {
             res.json({
                 ok: true,
                 users,
