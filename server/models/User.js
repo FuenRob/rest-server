@@ -24,8 +24,7 @@ let userSchema = new Schema({
     },
     img: {
         type: String,
-        required: false,
-        default: ''
+        required: false
     },
     role: {
         type: String,
